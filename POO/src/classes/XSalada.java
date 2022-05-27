@@ -8,6 +8,7 @@ public class XSalada extends XBurguer {
         this.adicionarIngrediente("Maionese");
         this.adicionarIngrediente("Picles");
         this.adicionarIngrediente("Pão");
+        this.tipo = "XSalada";
     }
 
 }
