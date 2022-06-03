@@ -1,15 +1,31 @@
+import classes.cliente.Cliente;
 import classes.lanche.*;
 
 import java.util.Scanner;
 
 public class Main {
     public static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        monstarLanche();
+        Cliente cl = new Cliente();
+        System.out.println("Insira o nome do cliente: ");
+        cl.setNome(in.nextLine());
+        for (int i = 0; i < 10; i++) {
+            cl.getPedido().adicionarLanche(montarLanche());
+            if (i == 9) {
+                break;
+        }
+        System.out.println("Deseja mais um lanche? (S/N)");
+        if (in.nextLine().equalsIgnoreCase(("N"))) {
+            break;
 
-
+        }
     }
-    private static void monstarLanche() {
+        System.out.println("cliente: "+cl.getNome());
+        cl.getPedido().imprimirComanda();
+}
+
+    private static Lanche montarLanche() {
         System.out.println("-MENU: Escolha uma opção-");
         System.out.println("(1) - X-Salada");
         System.out.println("(2) - X-Burguer");
@@ -114,7 +130,7 @@ public class Main {
                 System.out.println("MO - média");
                 System.out.println("LG - grande");
                 System.out.println("XL - familia");
-                ((Pizza) lanche). setTamanho(in.nextLine().toUpperCase());
+                ((Pizza) lanche).setTamanho(in.nextLine().toUpperCase());
             }
 
             System.out.print("Informe se Mini Pizza será com borda recheada: (S = Sim / N = Não): ");
@@ -129,7 +145,8 @@ public class Main {
         }
         System.out.print("Informe o valor do(a) " + lanche.getTipo() + ": R$ ");
         lanche.setValor(in.nextDouble());
-        lanche.montarComanda();
+        in.nextLine();
+        return lanche;
     }
 }
 

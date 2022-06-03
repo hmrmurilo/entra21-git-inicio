@@ -17,20 +17,12 @@ public abstract class Lanche {
         }
     }
 
-    public void montarComanda() {
-        if (this instanceof MiniPizza) {
-            System.out.println("====" + this.getTipo() + " - " + ((MiniPizza) this).getSabor() + "====");
-        } else {
-            System.out.println("=====" + this.getTipo() + "=====");
-        }
-        System.out.printf("Valor: R$%.2f\n", this.getValor());
-        System.out.println("-INGREDIENTES-");
-        for (String ingrediente : this.ingredientes) {
-            if (ingrediente != null) {
-                System.out.println(ingrediente);
-            }
-        }
-        System.out.println("--------------");
+    public String[] getIngredientes() {
+        return ingredientes;
+    }
+
+    public void setIngredientes(String[] ingredientes) {
+        this.ingredientes = ingredientes;
     }
 
     public void setValor(double valor) {
@@ -49,4 +41,5 @@ public abstract class Lanche {
         return this.tipo;
     }
 }
+
 

@@ -40,13 +40,6 @@ public class MiniPizza extends Lanche {
         }
     }
 
-    @Override
-    public void montarComanda() {
-        super.montarComanda();
-        if (this.bordaRecheada) {
-            System.out.println("-- Com borda recheada --" + this.bordaSabor);
-        }
-    }
 
     public void setBordaRecheada(boolean bordaRecheada) {
         this.bordaRecheada = bordaRecheada;
