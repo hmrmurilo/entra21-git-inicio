@@ -10,6 +10,16 @@ public class Tarefa {
     private boolean completa;
     private int ordem;
 
+    private ChecklistItem [] checklist;
+
+    public ChecklistItem[] getLista() {
+        return checklist;
+    }
+
+    public void setLista(ChecklistItem[] lista) {
+        this.checklist = lista;
+    }
+
     public Tarefa () {
         this.setUuid(UUID.randomUUID().toString());
 
