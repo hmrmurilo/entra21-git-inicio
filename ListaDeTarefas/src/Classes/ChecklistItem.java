@@ -63,7 +63,15 @@ public class ChecklistItem {
     public void setOrdemCheck(int ordemCheck) {
         this.ordemCheck = ordemCheck;
     }
-}
+//
+//    public int getOrdemCheck() {
+//        return ordemCheck;
+//    }
+//
+//    public void setOrdemCheck(int ordemCheck) {
+//        this.ordemCheck = ordemCheck;
+//    }
+//}
 
 
 

@@ -11,6 +11,7 @@ public class Tarefa {
     private int ordem;
 
     private ChecklistItem [] checklist;
+    private int[] getChecklist;
 
     public ChecklistItem[] getLista() {
         return checklist;
@@ -27,7 +28,29 @@ public class Tarefa {
     }
     public void completar() {
         this.setCompleta(true);
+        for (ChecklistItem item : this.getChecklist()) {
+            if (item != null);
+            item.completar();
+        }
 
+    }
+    public boolean temChecklist () {
+        return this.getChecklist() != null;
+
+    }
+    public void criarChecklist(int tamanho) {
+        this.setChecklist(new ChecklistItem[tamanho]);
+    }
+
+    public boolean adicionarChecklistItem(ChecklistItem item) {
+        for (int i = 0; i < this.getChecklist().length; i++) {
+            if (this.getChecklist()[i] == null) {
+                this.getChecklist()[i] = item;
+                return true;
+
+            }
+        }
+        return false;
 
     }
 
@@ -65,6 +88,14 @@ public class Tarefa {
 
     public void setOrdem(int ordem) {
         this.ordem = ordem;
+    }
+
+    public ChecklistItem[] getChecklist() {
+        return checklist;
+    }
+
+    public void setChecklist(ChecklistItem[] checklist) {
+        checklist = checklist;
     }
 
     public int getOrdem() {
