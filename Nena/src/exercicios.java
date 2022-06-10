@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class exercicios {
 
     public static void main(String[] args) {
-        exe05();
+        exe07();
     }
 
     public static void exe01() {
@@ -89,6 +89,84 @@ public class exercicios {
         System.out.println("O total de votos válidos é de: " + votosvalidos);
         System.out.println("O percentual de votos válidos é: " + porcentagemvotosvalidos + "%");
         System.out.print("O percentual de votos brancos e nulos é: " + porcentagembrancosenulos + "%");
+    }
+
+
+    public static void exe06() {
+        //Variáveis
+        double salarioatual;
+        double porcentagemaumento;
+        double aumento;
+        double salarionovo;
+        Scanner scan = new Scanner(System.in);
+
+        //Entrada
+        System.out.println("Digite o salário atual do colaborador: ");
+        salarioatual = scan.nextInt();
+        System.out.println("Digite o percentual de aumento salarial: ");
+        porcentagemaumento = scan.nextInt();
+
+        //Processamento
+        aumento = (porcentagemaumento * salarioatual / 100);
+        salarionovo = salarioatual + aumento;
+
+        //Saída
+        System.out.println("O novo salario é: "+salarionovo);
+
+    }
+
+
+    public static void exe07() {
+        //Variáveis
+        double custofabrica;
+        double porcentagemdistribuidor = 28;
+        double aumentodistribuidor;
+        double porcentagemtimposto = 45;
+        double aumentoimposto;
+        double custofinal;
+        Scanner scan = new Scanner(System.in);
+
+        //Entrada
+        System.out.print("Digite o custo de fábrica do automóvel: ");
+        custofabrica = scan.nextDouble();
+
+        //Processamento
+        aumentodistribuidor = (porcentagemdistribuidor * custofabrica / 100);
+        aumentoimposto = (porcentagemtimposto * custofabrica / 100);
+        custofinal = (custofabrica + aumentodistribuidor + aumentoimposto);
+
+        //Saída
+        System.out.printf("O custo final do automóvel para o consumidor é: R$%.2f ", custofinal);
+    }
+
+    public static void exe08() {
+        //Variáveis
+        double salariofixo;
+        double totalcarrosvendidos;
+        double valorporcarro;
+        double comissao;
+        double valortotalvendas;
+        double porcentagemtotalvendas = 5;
+        double salariofinal;
+
+        Scanner scan = new Scanner(System.in);
+
+        //Entrada
+        System.out.println("Digite o salário fixo do colaborador: ");
+        salariofixo = scan.nextDouble();
+        System.out.println("Digite o total de carros vendidos: ");
+        totalcarrosvendidos = scan.nextDouble();
+        System.out.println("Digite o valor recebido por carro vendido: ");
+        valorporcarro = scan.nextDouble();
+        System.out.println("Digite o valor total das vendas: ");
+        valortotalvendas  = scan.nextDouble();
+
+        //Processamento
+        comissao = ((totalcarrosvendidos * valorporcarro) +(valortotalvendas * porcentagemtotalvendas / 100));
+        salariofinal = comissao + salariofixo;
+
+        //Saída
+        System.out.println("O salário final é: "+salariofinal);
     }
 
 }
