@@ -12,7 +12,6 @@ public class Estante {
     public Estante(int capMaxima) {
         setCapMaxima(capMaxima);
         setItens(new Item[capMaxima]);
-
         //TODO
     }
 
@@ -26,14 +25,12 @@ public class Estante {
             if (i != null) {
                 contador++;
             }
-
         }
-        return 0;
+        return contador;
     }
 
-
     public Item buscarItem(String titulo) {
-        for (Item i : getItens()) {
+        for (Item i : this.getItens()) {
             if (i != null && i.getTitulo().toLowerCase().contains(titulo.toLowerCase())) {
                 return i;
             }
@@ -42,11 +39,10 @@ public class Estante {
     }
 
     public boolean adicionarItem(Item item) {
-        for (int i = 0; i < this.getItens().length; i++) {
+        for (int i = 0; i < getItens().length; i++) {
             if (this.getItens()[i] == null) {
                 this.getItens()[i] = item;
                 return true;
-
             }
         }
         return false;
