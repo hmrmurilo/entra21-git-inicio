@@ -1,12 +1,14 @@
 package classes.avaliacao;
 
+import java.time.LocalDateTime;
+
 public class Avaliacao {
     private double rating;
     private String nome;
     private String feedback;
 
 
-    //Getters & Setters
+    // GETTERS & SETTERS
 
     public double getRating() {
         return rating;

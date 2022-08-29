@@ -17,6 +17,8 @@ public abstract class Lanche {
         }
     }
 
+    public abstract void mostrarDetalhesComanda();
+
     public String[] getIngredientes() {
         return ingredientes;
     }
