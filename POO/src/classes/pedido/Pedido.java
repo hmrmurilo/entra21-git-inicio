@@ -2,10 +2,12 @@ package classes.pedido;
 
 import classes.lanche.*;
 
+import java.util.ArrayList;
+
 public class Pedido {
 
 
-    private Lanche[] lanches = new Lanche[10];
+    private ArrayList<lanches> lanches = new ArrayList<>();
 
     public void imprimirComanda() {
         for (Lanche l : this.getLanches()) {

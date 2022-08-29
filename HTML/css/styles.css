@@ -1,0 +1,265 @@
+body.XX {
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2019/09/mapa-america-do-sul-capa2019-01.jpg);
+    background-size: 1600px 800px;
+}
+
+
+body {
+    background-image: url(https://images2.alphacoders.com/985/thumb-1920-985705.jpg);
+    background-size: 1600px 800px;
+}
+
+button.botaogato {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: aqua;
+    padding: 5px 16px;
+}
+
+img.fotogato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5;
+    border-radius: 10px;
+}
+
+.btn {
+    border: 0;
+    background-color: transparent;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.btn.btn-success {
+    background-color: rgb(75, 191, 75);
+}
+
+.btn.btn-success:hover {
+    background-color: rgb(100, 220, 100);
+}
+
+.btn.btn-success:active {
+    background-color: rgb(54, 153, 54);
+}
+
+.btn.btn-warning {
+    background-color: rgb(228, 209, 62);
+}
+
+.btn.btn-warning:hover {
+    background-color: rgb(247, 227, 77);
+}
+
+.btn.btn-warning:active {
+    background-color: rgb(179, 163, 43);
+}
+
+.btn.btn-danger {
+    background-color: rgb(228, 62, 62);
+}
+
+.btn.btn-danger:hover {
+    background-color: rgb(247, 77, 77);
+}
+
+.btn.btn-danger:active {
+    background-color: rgb(179, 43, 43);
+}
+
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+
+.edit-cell {
+    text-align: center;
+
+}
+.edit-cell a {
+    text-decoration: none;
+    background-color: rgb(52, 100, 212);
+    padding: 4px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+ 
+}
+
+.edit-cell a:hover {
+    background-color: rgb(27, 82, 210);
+    
+}
+
+.dsn {
+    text-decoration: none;
+    background-color: rgb(52, 100, 212);
+    padding: 4px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+   
+}
+
+.dsn2 {
+    display: inline block;
+    text-align: center;
+}
+
+.dsn2:hover {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.t1 {
+    display: inline block;
+    text-align: center;
+}
+
+
+
+
+/* p {
+    color: blue;
+}
+
+i{
+    color: brown;
+}
+
+b {
+color: azure;
+}
+
+u {
+color: blueviolet;
+} 
+
+(*asteristico seleciona todos os elementos)*/
+
+/* table.contained {
+margin-left: 15%;
+margin-right: 15%;
+width: 70%; 
+
+}*/
+
+table {
+   /* border: 1px solid black;*/
+    width: 70%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+th {
+    text-align: start;
+    background-color: #6679af;
+    padding: 8px 4px;     
+    
+}
+
+tr {
+    border-bottom: 1px solid #b3b3b3;
+
+}
+
+li {
+    list-style: none;
+}  
+
+tfoot tr {
+    border-bottom: 0;
+
+}
+
+tfoot tr.combo td {
+    text-align: right;
+
+}
+
+small {
+    font-size: 12px;
+
+}  
+
+tfoot {
+    text-align: right;
+}
+
+
+
+
+* {
+    font-family: 'Poppins';
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        background-color: darkseagreen;
+    }
+    .dsn {
+    
+        margin: 0 48px; 
+        padding: 4px 8px;
+    }
+
+}
+/* ul {
+    display: block;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    text-align: center;
+} */
+
+.tituloT {
+    display: block;
+    text-align: center;
+    background-color: #29529c;
+    box-shadow: 10px 10px 5px rgb(24, 30, 58);
+    margin: 80px 140px;
+    padding: 20px;
+}
+
+label {
+    background-color: rgb(97, 127, 190) ;
+    box-shadow: 10px 10px 5px rgb(24, 30, 58);
+    padding: 2px;
+    border: 2px solid black;
+    
+}
+
+
+
+
+ 
+
+
+
+
+
+    
+    
+    
+
